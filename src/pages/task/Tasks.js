@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Task from './Task'
 
-let tasks = [
+let tasksInitial = [
     {
         id: 1,
         text: "MongoDB",
@@ -25,11 +25,11 @@ let tasks = [
         text: "NodeJS",
         day: "21-05-2022 5pm",
         remainder: true,
-    }
+    },
 ];
 const Tasks = () => {
     
-    const [tasks, setTasks] = useState([]);//Passing an empty array   
+    const [tasks, setTasks] = useState(tasksInitial);//Passing an empty array   
     return (
 
         
