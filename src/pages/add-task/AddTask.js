@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button'
+import { Link } from 'react-router-dom'
+
 
 const AddTask = () => {
   return (
@@ -25,7 +27,9 @@ const AddTask = () => {
             </label>
         </div>
         <div className='text-center mt-4 mb-5'>
-            <button className='btn btn-success add-task-btn'>Add Task</button>
+            <Link to="/">
+                <button className='btn btn-success add-task-btn'>Add Task</button>
+            </Link>
         </div>
     </div>
   )
